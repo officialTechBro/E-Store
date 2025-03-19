@@ -30,10 +30,7 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-            <Navbar />
-            <Container className='py-20'>
               {children}
-            </Container>
           </ThemeProvider>
         </body>
       </html>

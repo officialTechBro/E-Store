@@ -6,8 +6,10 @@ type EmptyListProps = {
 }
 
 const EmptyList = ({heading = "No items found!.", className}: EmptyListProps) => {
-  return <h2 className={cn('text-xl', className)}>
-    {heading}
-  </h2>
+  return <div className="flex items-center justify-center">
+    <h2 className={cn('text-xl mt-40', className)}>
+      {heading}
+    </h2>
+  </div>
 }
 export default EmptyList
